@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>FitZone - Sobre Nosotros</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="FitZone Gimnasio" name="keywords">
+    <meta content="Sobre Nosotros - FitZone" name="description">
+
+    <!-- Favicon -->
+    <link th:href="@{/img/Fitzone.png}" rel="icon">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link th:href="@{/lib/flaticon/font/flaticon.css}" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" th:href="@{/css/style.min.css}">
+    <link rel="stylesheet" th:href="@{/css/navbar.css}">
+    <link rel="stylesheet" th:href="@{/css/chatbot.css}">
+    
+</head>
+
+<body class="bg-white">
+    <!-- Inicio de la barra de navegación -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+            <a th:href="@{/home}" class="navbar-brand d-flex align-items-center">
+                <img th:src="@{/img/Fitzone.png}" alt="FitZone Logo" style="height:42px;width:42px;border-radius:50%;object-fit:cover;">
+                <div style="margin-left:14px;">
+                    <h1 class="m-0 font-weight-bold text-uppercase text-white" style="font-size:19px;line-height:1;letter-spacing:2px;">FitZone</h1>
+                    <p class="mb-0" style="font-size:9px;color:#FF5500;letter-spacing:2px;text-transform:uppercase;">Tu gimnasio, tu comunidad</p>
+                </div>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4 bg-secondary">
+                    <a th:href="@{/home}" class="nav-item nav-link">Inicio</a>
+                    <a th:href="@{/about}" class="nav-item nav-link active">Sobre Nosotros</a>
+                    <a th:href="@{/feature}" class="nav-item nav-link">Caracter&#237;sticas</a>
+                    <a th:href="@{/class}" class="nav-item nav-link">Clases</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">P&#225;ginas</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a th:href="@{/blog}" class="dropdown-item">Blog</a>
+                            <a th:href="@{/single}" class="dropdown-item">Detalles del Blog</a>
+                        </div>
+                    </div>
+                    <a th:href="@{/contact}" class="nav-item nav-link">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Fin de la barra de navegación -->
+
+<!-- Inicio del encabezado de página -->
+    <div class="container-fluid page-header mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Sobre nosotros</h4>
+            <div class="d-inline-flex">
+                <p class="m-0 text-white"><a class="text-white" href="">Inicio</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Sobre nosotros</p>
+            </div>
+        </div>
+    </div>
+   <!-- Fin del encabezado de página -->
+
+
+    <!-- Acerca de Inicio -->
+<div class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <img class="img-fluid mb-4 mb-lg-0" src="img/about.jpg" alt="Gimnasio con experiencia">
+        </div>
+        <div class="col-lg-6">
+            <h2 class="display-4 font-weight-bold mb-4">10 años de experiencia</h2>
+            <p>Durante más de una década, hemos transformado vidas a través del entrenamiento personalizado, la motivación constante y un enfoque integral en el bienestar físico.</p>
+            <div class="row py-2">
+                <div class="col-sm-6">
+                    <i class="flaticon-barbell display-2 text-primary"></i>
+                    <h4 class="font-weight-bold">Centro certificado</h4>
+                    <p>Contamos con instalaciones profesionales y entrenadores calificados que garantizan seguridad y resultados.</p>
+                </div>
+                <div class="col-sm-6">
+                    <i class="flaticon-medal display-2 text-primary"></i>
+                    <h4 class="font-weight-bold">Premios y reconocimientos</h4>
+                    <p>Reconocidos por nuestra excelencia en el servicio y el impacto positivo en la comunidad fitness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Acerca del final -->
+
+<!-- Inicio de funciones -->
+<div class="container-fluid my-5">
+    <div class="row">
+        <div class="col-lg-4 p-0">
+            <div class="d-flex align-items-center bg-secondary text-white px-5" style="min-height: 300px;">
+                <i class="flaticon-training display-3 text-primary mr-3"></i>
+                <div class="">
+                    <h2 class="text-white mb-3">Progresión</h2>
+                    <p>Te ayudamos a avanzar paso a paso con un enfoque personalizado y medible para que veas resultados reales.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 p-0">
+            <div class="d-flex align-items-center bg-primary text-white px-5" style="min-height: 300px;">
+                <i class="flaticon-weightlifting display-3 text-secondary mr-3"></i>
+                <div class="">
+                    <h2 class="text-white mb-3">Entrenamiento</h2>
+                    <p>Programas efectivos diseñados para mejorar tu fuerza, resistencia y condición física en general.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 p-0">
+            <div class="d-flex align-items-center bg-secondary text-white px-5" style="min-height: 300px;">
+                <i class="flaticon-treadmill display-3 text-primary mr-3"></i>
+                <div class="">
+                    <h2 class="text-white mb-3">Nutrición</h2>
+                    <p>Asesoría nutricional adaptada a tus objetivos: ya sea ganar músculo, perder grasa o mantenerte saludable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Fin de funciones -->
+
+
+    <!-- Team Start -->
+    <div class="container pt-5 team">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-primary font-weight-bold">Our Trainers</h4>
+            <h4 class="display-4 font-weight-bold">Meet Our Expert Trainers</h4>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="card border-0 bg-secondary text-center text-white">
+                    <img class="card-img-top" src="img/team-1.jpg" alt="">
+                    <div class="card-social d-flex align-items-center justify-content-center">
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="card-body bg-secondary">
+                        <h4 class="card-title text-primary">Trainer Name</h4>
+                        <p class="card-text">Trainer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="card border-0 bg-secondary text-center text-white">
+                    <img class="card-img-top" src="img/team-2.jpg" alt="">
+                    <div class="card-social d-flex align-items-center justify-content-center">
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="card-body bg-secondary">
+                        <h4 class="card-title text-primary">Trainer Name</h4>
+                        <p class="card-text">Trainer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="card border-0 bg-secondary text-center text-white">
+                    <img class="card-img-top" src="img/team-3.jpg" alt="">
+                    <div class="card-social d-flex align-items-center justify-content-center">
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="card-body bg-secondary">
+                        <h4 class="card-title text-primary">Trainer Name</h4>
+                        <p class="card-text">Trainer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="card border-0 bg-secondary text-center text-white">
+                    <img class="card-img-top" src="img/team-4.jpg" alt="">
+                    <div class="card-social d-flex align-items-center justify-content-center">
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="card-body bg-secondary">
+                        <h4 class="card-title text-primary">Trainer Name</h4>
+                        <p class="card-text">Trainer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Get In Touch</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Quick Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <a th:href="@{/about}" class="nav-item nav-link">Sobre Nosotros</a>
+                    <a th:href="@{/feature}" class="nav-item nav-link">Características</a>
+                    <a th:href="@{/class}" class="nav-item nav-link">Clases</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Popular Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Sobre nosotros</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Opening Hours</h4>
+                <h5 class="text-white">Monday - Friday</h5>
+                <p>8.00 AM - 8.00 PM</p>
+                <h5 class="text-white">Saturday - Sunday</h5>
+                <p>2.00 PM - 8.00 PM</p>
+            </div>
+        </div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script th:src="@{/lib/easing/easing.min.js}"></script>
+    <script th:src="@{/lib/waypoints/waypoints.min.js}"></script>
+    <script th:src="@{/js/main.js}"></script>
+
+    <!-- FitBot Widget -->
+    <div th:replace="~{fragments/chatbot :: chatbot-widget}"></div>
+
+    <script th:src="@{/js/navbar.js}"></script>
+
+</body>
+
+</html>

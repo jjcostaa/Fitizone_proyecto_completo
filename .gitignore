@@ -1,0 +1,41 @@
+# Java / Maven
+target/
+*.jar
+*.war
+*.ear
+*.log
+
+# Flutter / Dart / Android builds
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+*.apk
+*.aab
+*.ipa
+android/.gradle/
+android/local.properties
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE & OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Secrets & local uploads
+.env
+*.env
+application-local.properties
+application-secret.properties
+secrets.properties
+uploads/
+src/main/resources/models/*.model
